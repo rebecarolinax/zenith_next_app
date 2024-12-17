@@ -3,7 +3,6 @@ import { BannerLogin } from "@/components/BannerLoginPage/Index";
 import { AuthenticationButton, Button } from "@/components/Button";
 import { Header } from "@/components/Header";
 import { LoginForm } from "@/components/LoginForm/Index";
-import { Modal } from "@/components/Modal/Index";
 import { Graphic, GraphicRiskLevel } from "@/components/Graphic/Index";
 import { KanbanProjects, TotalProjects } from "@/components/KanbanProjects";
 // import { Button } from "@/components/Button";
