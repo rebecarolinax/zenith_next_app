@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import zenithLogoXL from "../../assets/Icons/ZenithLogoXL.svg";
 import { DefaultParagraph } from "../Text";
 import { BlueInput } from "../Input";
 import { CheckBox } from "../CheckBox/Index";

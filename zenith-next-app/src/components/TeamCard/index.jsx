@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { SmallTitle } from "../Text";
-import Woman from "../../assets/images/Woman.png";
 import { Button, ButtonProject } from "../Button";
 import { useEffect } from "react";
 

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import zenithLogoXL from "../../assets/Icons/ZenithLogoXL.svg";
 import { DefaultParagraph } from "../Text";
 import { Button } from "../Button";
 import { useEffect, useState } from "react";
