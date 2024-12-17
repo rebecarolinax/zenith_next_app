@@ -7,7 +7,7 @@ export default function LoginPage() {
     <div className="h-screen w-full flex flex-row items-center justify-center overflow-hidden">
       <BannerLogin />
       <Suspense fallback={<div>Loading...</div>}>
-      <ResetPasswordForm />
+        <ResetPasswordForm />
       </Suspense>
     </div>
   );
