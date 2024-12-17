@@ -13,7 +13,7 @@ import { TeamCard } from "@/components/TeamCard";
 import { WhiteCard } from "@/components/WhiteCard";
 import { useContext, useEffect, useState } from "react";
 import { Container, ContainerPlatform } from "@/components/Contain";
-import { ModalProfessionalsSchema } from "@/components/Modal";
+
 import {
   api,
   getAllProjectsRoute,
