@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-// import zenithLogoXL from "../../../public/assets/Icons/zenithLogoXL.svg";
-import zenithLogoXL from "../../assets/Icons/ZenithLogoXL.svg";
+import zenithLogoXL from "../../assets/Icons/zenithLogoXL.svg";
 import { BlackTitle, DefaultPagagraph, DefaultParagraph } from "../Text";
 import { BlueInput } from "../Input";
 import { AuthenticationButton, Button } from "../Button";
