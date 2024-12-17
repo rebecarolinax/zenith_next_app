@@ -12,13 +12,14 @@ import { SmallTitle } from "@/components/Text";
 import { OtherProjects } from "@/components/OtherProjects";
 
 export default function Home() {
-  const { userData, setUserData } = useContext(UserContext);
+  const { userData } = useContext(UserContext);
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   const [isClient, setIsClient] = useState(false); // Verificação para renderizar no cliente
 
+  // Definir a renderização somente no cliente
   useEffect(() => {
-    setIsClient(true); // Garantir que o código só execute no cliente
+    setIsClient(true);
   }, []);
 
   useEffect(() => {
@@ -51,10 +52,12 @@ export default function Home() {
         ) : projects.length === 0 ? (
           <div className="justify-center items-center lg:ml-60 lg:mt-8">
             <SmallTitle>Não há projetos em andamento para o seu perfil</SmallTitle>
-            <LottieAnimation
-              src="https://lottie.host/736e7585-6442-47d5-a931-47787a0be70a/SDfPmJ732F.json"
-              style={{ height: 100, width: 100 }}
-            />
+            {isClient && (
+              <LottieAnimation
+                src="https://lottie.host/736e7585-6442-47d5-a931-47787a0be70a/SDfPmJ732F.json"
+                style={{ height: 100, width: 100 }}
+              />
+            )}
           </div>
         ) : (
           <div className="w-full h-full flex flex-col">
