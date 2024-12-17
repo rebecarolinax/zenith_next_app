@@ -16,10 +16,11 @@ export default function Home() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   const [isClient, setIsClient] = useState(false); // Verificação para renderizar no cliente
+  const [isMounted, setIsMounted] = useState(false); // Garantir montagem do componente no cliente
 
-  // Definir a renderização somente no cliente
   useEffect(() => {
     setIsClient(true);
+    setIsMounted(true); // Marcar como montado após a renderização inicial
   }, []);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function Home() {
     }
   }, [userData]);
 
-  if (!isClient) return null; // Evitar renderização no servidor
+  if (!isClient || !isMounted) return null; // Evitar renderização no servidor
 
   return (
     <ContainerPlatform style={"!pl-0 "}>
